@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller Pipote </title>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css" >
+<link rel="icon" type="image/png" href="img/coche-con-llave.png">
+</head>
+<body>
+
+<!-- Header (Encabezado) -->
+<header>
+  <div class="contenedor barra-navegacion">
+    <div class="logo">Pagina Con Fines Didacticos, Para Curso - Talento Tech </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#dondeestamos">Donde Estamos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+<!-- Main (Principal) -->
+<main>
+  <!-- Banner de bienvenida -->
+  <section class="hero">
+    <h1>
+        Taller PIPOTE
+    </h1>
+    <p>
+        Responsabilidad y Seriedad en Los Trabajos Realizados.
+    </p>
+    <a href="#promociones" class="boton">
+        Ver Servicios
+    </a>
+  </section>
+
+  <!-- Aca Armamos 2 Tarjetas Base Con Las Promociones -->
+  <section id="promociones" class="contenedor">
+    <p style="text-align: center; font-size: 30px; font-weight: bold;">
+        Promociones, Mes de Octubre 2026
+    </p>
+
+    <div class="contenedor-tarjetas">
+
+      <!-- Tarjeta Numero 1 -->
+      <article class="tarjetas">
+        <img src="img/cambiopastillasfreno.avif" alt="Cambio Pastillas de Freno">
+        <div class="tarjetas-informacion">
+          <span class="categoria">Promo 1</span>
+          <h3>Cambio Pastillas de Freno</h3>
+          <p>Incluye 4 Pastillas Delanteras</p>
+          <span class="precio">$88.000</span>
+          <a href="turnos.html">
+            <button><i class="fa-calendar-days fa-solid"></i> Solicitar Turno</button>
+          </a>
+        </div>
+      </article>
+
+      <!-- Tarjeta Numero 2 -->
+      <article class="tarjetas">
+        <img src="img/trendelantero.avif" width="30" height="10" alt="Control y Reparacion de Tren Delantero">
+        <div class="tarjetas-informacion">
+          <span class="categoria">Promo 2</span>
+          <h3>Cambio Amortiguadores</h3>
+          <p>Incluye 2 Amortiguadores Delanteros</p>
+          <span class="precio">$218.900</span>
+          <a href="turnos.html">
+            <button><i class="fa-calendar-days fa-solid" ></i> Solicitar Turno</button>
+          </a>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  <!-- Seccion de contacto -->
+  <section id="dondeestamos" class="contenedor">
+    <h2 class="titulo-contacto">Donde Estamos</h2>
+
+    <div class="bloque-contacto">
+
+      <!-- Columna de datos -->
+      <div class="datos-contacto">
+        <h3>Unico Taller</h3>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Av. Nicolas Videla S/N - Berazategui</li>
+          <li><i class="fa-solid fa-clock"></i> Lunes a Viernes de 08 a 16 hrs</li>
+        </ul>
+
+        <h3>Telefonos</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> Servicios: <a href="tel:+541145550001">+54 11 4555-0001</a></li>
+          <li><i class="fa-solid fa-headset"></i> Turnos: <a href="tel:+541145550002">+54 11 4555-0002</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="tel:+5491145550003">+54 9 11 4555-0003</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:pepote@pepo.com.ar">info@pepo.com.ar</a></li>
+        </ul>
+        <p style="text-align: center; font-size: 14px; font-weight: bold;">
+          * Datos de contacto ficticios, solo de ejemplo *
+        </p>
+      </div>
+
+      <div class="mapa">
+         <iframe
+          src="https://www.google.com/maps/embed/v1/place?q=Berazategui%2021%20y%20139&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          title="Ubicacion Aproximada Taller"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+  </section>
+</main>
+
+<!-- Pie de Pagina -->
+<footer>
+  <div  id="contacto" class="contenedor footer-columnas">
+
+    <!-- Primer Columna -->
+    <div class="columna">
+      <h4>Curso Front End - Talento Tech</h4>
+      <p>Pagina Taller solo creada a los fines del curso de
+         Desarrollo Front End de TalentoTech.</p>
+    </div>
+
+    <!-- Segunda Columna -->
+    <div class="columna">
+      <h4>Contacto</h4>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> info@pepo.com.ar</li>
+        <li><i class="fa-solid fa-phone"></i> +54 11 4555-0001</li>
+        <li><i class="fa-brands fa-whatsapp"></i> +54 9 11 4555-0003</li>
+        <li><i class="fa-solid fa-location-dot"></i> Nicolas Videla S/N, Berazategui - Buenos Aires</li>
+      </ul>
+    </div>
+
+    <!-- Tercer Columna redes sociales con iconos de Font Awesome
+          Copiada del Ejemplo del Profe -->
+    <div class="columna">
+      <h4>Seguinos</h4>
+      <p>@pepo</p>
+      <div class="redes">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="copyright">&copy; Pepo Software 2026 Para Curso de Talento Tech </p>
+</footer>
+
+</body>
+
+<!--
+Icono Motor <a href="https://www.flaticon.es/iconos-gratis/automotor" title="automotor iconos">Automotor iconos creados por HAJICON - Flaticon</a>
+Icono Auxilio <a href="https://www.flaticon.es/iconos-gratis/camion-de-remolque" title="camión de remolque iconos">Camión de remolque iconos creados por AbtoCreative - Flaticon</a>
+Cambio Aceite <a href="https://unsplash.com/es/@dextarstudio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dextar Studio</a> en <a href="https://unsplash.com/es/fotos/mecanico-vertiendo-aceite-en-el-motor-del-coche-gW34cv-Ojjs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Pastillas Freno <a href="https://unsplash.com/es/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> en <a href="https://unsplash.com/es/fotos/primer-plano-del-rotor-y-la-pinza-de-freno-de-un-automovil-vS2shmNei2E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Tren Delantero <a href="https://unsplash.com/es/@zoshuacolah?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zoshua Colah</a> en <a href="https://unsplash.com/es/fotos/primer-plano-de-la-suspension-y-el-eje-de-transmision-de-un-coche-02f--k314tE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+-->
+
+
+</html>

@@ -1,0 +1,331 @@
+/* Sacamos los margenes que el navegador pone por defecto.
+   Esto es muy recomendable Simpre Hacerlo al Principio Para No Olvidarse */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #FAFAFA;
+  }
+
+  /* Clase reutilizable: centra el contenido y le pone un ancho maximo */
+  .contenedor {
+    max-width: 1100px;
+    margin: 0 auto;        
+    padding: 0 20px;
+  }
+
+  header {
+    background: #0a0a0a;
+    color: white;
+    padding: 15px 0;
+    /*Las 5 Lineas Siguientes Dejan Fija la Parte Superior de la Pagina*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;    
+  }
+
+  .barra-navegacion {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* El menu tambien es flex: los <li> quedan en fila */
+  .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none
+  }
+
+  .menu a:hover {
+    color: #f10e1adc;
+    text-decoration: underline;
+  }
+
+  /* Color de Fondo y Letras del banner de bienvenida */
+  .hero {
+    background: #35c1c2;
+    color: rgb(255, 255, 232);
+    text-align: center;
+    padding: 60px 20px;
+  }
+  /* Tamaño del Titulo y Margen Inferior */
+  .hero h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  /* Tamaño y Posicion de Parrafo del banner */
+  .hero p{
+    color: rgb(255, 255, 232);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* Boton ubicado en el banner */
+  .boton {
+    display: inline-block;
+    margin-top: 20px;
+    background: #FFD34D;
+    color: #222;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .boton:hover {
+    background: #e5b833;
+  }
+
+  main {
+    padding-bottom: 50px;
+  }
+
+  .titulo-contacto {
+    text-align: left;
+    margin: 50px 0 30px;
+    font-size: 24px;
+  }
+  
+  /* Tarjeta Para Las Promociones */
+  .tarjetas-promociones {
+    display: flex;
+    flex-wrap: wrap-reverse;          /* si no entran, pasan a la fila de abajo */
+    gap: 25px;                /* separacion entre tarjetas */
+    justify-content: space-between;
+  }
+
+  /* Contenedor Padre: Alinea las tarjetas horizontalmente */
+  .contenedor-tarjetas {
+    display: flex;
+    gap: 16px; /* Espacio de separación entre las dos tarjetas */
+    width: 100%; /* O el ancho máximo que desees, ej: max-width: 800px; */
+    margin: 0 auto;
+  }
+
+  .tarjetas {
+    flex: 1; /* Hace que ambas tarjetas crezcan y ocupen exactamente el mismo tamaño */
+    min-width: 0; /* Evita que el contenido desborde la tarjeta */
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  /* Mueve las Tarjetas Seleccionados por el Puntero */
+  .tarjetas:hover {
+    transform: translateY(-8px);
+  }
+
+  .tarjetas img {
+    width: auto;
+    height: auto;
+    object-fit: fill;
+    display: block;
+  }
+
+  .tarjetas-informacion {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .categoria {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: #296e6f;
+    letter-spacing: 1px;
+  }
+
+  .tarjetas h3 {
+    font-size: 18px;
+  }
+
+  /* Clase para resaltar el Precio */
+  .precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1F6F66;
+    margin-top: auto;
+  }
+
+  /* Botones dentro de las Tarjetas */
+  .tarjetas button {
+    display: inline-block;
+    background: #35c1c2;
+    color: rgba(11, 11, 11, 0.992);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 22%;
+  }
+
+  .tarjetas button:hover {
+    background: #1e7979;
+  }
+
+  /* Pie de Pagina de 3 tres columnas que se acomodan solas. */
+  footer {
+    background: #222;
+    color: #DDD;
+    padding: 40px 0 20px;
+  }
+
+  .footer-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .columna {
+    flex: 1 1 250px;
+  }
+
+  .columna h4 {
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  .columna ul {
+    list-style: none;
+  }
+
+  .columna a {
+    color: #DDD;
+    text-decoration: none;
+  }
+
+  .columna a:hover {
+    color: #FFD34D;
+  }
+
+  /* Los iconos de redes, en fila y separados */
+  .redes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  /* Cada icono va dentro de un circulo. Usamos flex para centrarlo adentro. */
+  .redes a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .redes a:hover {
+    background: #2F8F83;
+    color: white;
+  }
+
+  .copyright {
+    text-align: left;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  /* Contacto */
+  .bloque-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  .datos-contacto {
+    flex-grow: 1;   /* Es Igual flex: 1 1 320px crece, se achica, base 320px */
+    flex-shrink: 1;
+    flex-basis: 320px;          
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 25px;
+  }
+
+  .datos-contacto h3 {
+    font-size: 18px;
+    color: #1F6F66;
+    margin-bottom: 10px;
+  }
+
+  .datos-contacto ul {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+
+  .datos-contacto li {
+    padding: 6px 0;
+  }
+
+  /* Los iconos quedan todos alineados a la misma distancia */
+  .datos-contacto li i {
+    color: #2F8F83;
+    width: 22px;
+  }
+
+  .datos-contacto a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .datos-contacto a:hover {
+    color: #5b6967;
+    text-decoration: underline;
+  }
+
+  .mapa {
+    flex: 1 1 420px;
+    min-height: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border: 0;
+    display: block;
+  }
